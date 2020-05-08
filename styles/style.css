@@ -63,6 +63,19 @@ button {
           align-items: none;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  position: relative;
+}
+
+#home .hero-section .circle1 {
+  position: absolute;
+  fill: #bc3a80;
+  height: calc(14.1rem + 20vmin);
+  width: calc(14.1rem + 20vmin);
+}
+
+#home .hero-section .circle1 svg {
+  height: 100%;
+  width: 100%;
 }
 
 #home .hero-section .call-to-action .call-to-action-content {

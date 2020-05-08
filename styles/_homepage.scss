@@ -5,6 +5,17 @@
   .hero-section {
     @include spacing(90%, auto);
     @include flex(row, none, space-around);
+    position: relative;
+    .circle1 {
+      position: absolute;
+      fill: #bc3a80;
+      height: calc(14.1rem + 20vmin);
+      width: calc(14.1rem + 20vmin);
+      svg {
+        height: 100%;
+        width: 100%;
+      }
+    }
     .call-to-action {
       .call-to-action-content {
         height: 50%;
