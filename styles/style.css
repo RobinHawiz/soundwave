@@ -64,13 +64,16 @@ button {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   position: relative;
+  z-index: 1;
 }
 
 #home .hero-section .circle1 {
   position: absolute;
   fill: #bc3a80;
+  opacity: 0.1;
   height: calc(14.1rem + 20vmin);
   width: calc(14.1rem + 20vmin);
+  z-index: -1;
 }
 
 #home .hero-section .circle1 svg {

@@ -6,11 +6,15 @@
     @include spacing(90%, auto);
     @include flex(row, none, space-around);
     position: relative;
+    z-index: 1;
+
     .circle1 {
       position: absolute;
       fill: #bc3a80;
+      opacity: 0.1;
       height: calc(14.1rem + 20vmin);
       width: calc(14.1rem + 20vmin);
+      z-index: -1;
       svg {
         height: 100%;
         width: 100%;
