@@ -1,1 +1,27 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: calc(3vmin + 3rem);
+}
+
+h2 {
+  font-size: calc(1vmin + 2.3rem);
+}
+
+button {
+  font-size: calc(0.5vmin + 1.8rem);
+}
+/*# sourceMappingURL=style.css.map */
