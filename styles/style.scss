@@ -24,3 +24,9 @@ $background-color: #2f303a;
 
 @import "globals";
 @import "homepage";
+
+@media screen and (max-width: 1191px) {
+  .music-girl {
+    order: 2;
+  }
+}
