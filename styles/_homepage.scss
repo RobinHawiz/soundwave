@@ -8,6 +8,7 @@
     @include flex(row, none, space-around);
     position: relative;
     z-index: 1;
+    flex-wrap: wrap;
 
     .circle {
       position: absolute;
@@ -49,7 +50,18 @@
       top: 40%;
       left: 80%;
     }
+    .music-girl {
+      min-width: 32rem;
+
+      img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+      }
+    }
     .call-to-action {
+      flex: 1 1 47rem;
+      @include flex(column, center, none);
       .call-to-action-content {
         height: 50%;
         @include flex(column, none, center);

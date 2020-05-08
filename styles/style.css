@@ -67,6 +67,8 @@ button {
       justify-content: space-around;
   position: relative;
   z-index: 1;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 #home .hero-section .circle {
@@ -109,6 +111,36 @@ button {
   z-index: -1;
   top: 40%;
   left: 80%;
+}
+
+#home .hero-section .music-girl {
+  min-width: 32rem;
+}
+
+#home .hero-section .music-girl img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+#home .hero-section .call-to-action {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 47rem;
+          flex: 1 1 47rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
 }
 
 #home .hero-section .call-to-action .call-to-action-content {
