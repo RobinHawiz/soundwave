@@ -13,7 +13,7 @@ $background-color: #2f303a;
 
 @mixin spacing($width, $margin) {
   width: $width;
-  margin: $margin;
+  margin: 0 $margin;
 }
 
 @import "globals";
