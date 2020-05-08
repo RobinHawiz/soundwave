@@ -5,5 +5,29 @@
   .hero-section {
     @include spacing(90%, auto);
     @include flex(row, none, space-around);
+    .call-to-action {
+      .call-to-action-content {
+        height: 50%;
+        @include flex(column, none, center);
+
+        h2 {
+          padding-top: 1.5rem;
+        }
+
+        .button-container {
+          margin-top: 7rem;
+
+          button {
+            @include calc(padding-top, "0.5rem + 2vmin");
+            @include calc(padding-bottom, "0.5rem + 2vmin");
+            @include calc(padding-right, "3.5rem + 3vmin");
+            @include calc(padding-left, "3.5rem + 3vmin");
+            border-radius: 1rem;
+            border: none;
+            background: $button-color;
+          }
+        }
+      }
+    }
   }
 }

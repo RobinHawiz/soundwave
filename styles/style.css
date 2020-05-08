@@ -11,18 +11,23 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
+  color: white;
 }
 
 h1 {
   font-size: calc(3vmin + 3rem);
+  font-weight: lighter;
 }
 
 h2 {
   font-size: calc(1vmin + 2.3rem);
+  font-weight: lighter;
 }
 
 button {
-  font-size: calc(0.5vmin + 1.8rem);
+  font-size: calc(0.7vmin + 1.5rem);
+  font-family: "Poppins", sans-serif;
+  color: white;
 }
 
 #home {
@@ -58,5 +63,40 @@ button {
           align-items: none;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+#home .hero-section .call-to-action .call-to-action-content {
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: none;
+      -ms-flex-align: none;
+          align-items: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#home .hero-section .call-to-action .call-to-action-content h2 {
+  padding-top: 1.5rem;
+}
+
+#home .hero-section .call-to-action .call-to-action-content .button-container {
+  margin-top: 7rem;
+}
+
+#home .hero-section .call-to-action .call-to-action-content .button-container button {
+  padding-top: calc(0.5rem + 2vmin);
+  padding-bottom: calc(0.5rem + 2vmin);
+  padding-right: calc(3.5rem + 3vmin);
+  padding-left: calc(3.5rem + 3vmin);
+  border-radius: 1rem;
+  border: none;
+  background: #1762a7;
 }
 /*# sourceMappingURL=style.css.map */
