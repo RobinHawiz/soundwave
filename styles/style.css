@@ -28,6 +28,7 @@ button {
   font-size: calc(1vmin + 1rem);
   font-family: "Poppins", sans-serif;
   color: white;
+  cursor: pointer;
 }
 
 #home {
@@ -131,15 +132,12 @@ button {
   padding-top: 1.5rem;
 }
 
-#home .hero-section .call-to-action .call-to-action-content .button-container {
-  margin-top: 7rem;
-}
-
 #home .hero-section .call-to-action .call-to-action-content .button-container button {
   padding-top: calc(0.5rem + 2vmin);
   padding-bottom: calc(0.5rem + 2vmin);
   padding-right: calc(3.5rem + 3vmin);
   padding-left: calc(3.5rem + 3vmin);
+  margin-top: 7rem;
   border-radius: 1rem;
   border: none;
   background: #1762a7;
