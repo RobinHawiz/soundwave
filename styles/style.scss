@@ -4,9 +4,6 @@ $button-text: calc(0.5vmin + 1.8rem);
 $button-color: #1762a7;
 $background-color: #2f303a;
 
-@import "globals";
-@import "homepage";
-
 @mixin flex($direction, $align, $justify) {
   display: flex;
   flex-direction: $direction;
@@ -18,3 +15,6 @@ $background-color: #2f303a;
   width: $width;
   margin: $margin;
 }
+
+@import "globals";
+@import "homepage";
