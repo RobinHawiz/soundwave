@@ -8,6 +8,14 @@
     position: relative;
     z-index: 1;
 
+    .circle {
+      position: absolute;
+      svg {
+        height: 100%;
+        width: 100%;
+      }
+    }
+
     .circle1 {
       position: absolute;
       fill: #bc3a80;
@@ -17,10 +25,17 @@
       z-index: -1;
       bottom: 10%;
       left: 0;
-      svg {
-        height: 100%;
-        width: 100%;
-      }
+    }
+
+    .circle2 {
+      position: absolute;
+      fill: #1762a7;
+      opacity: 0.1;
+      height: calc(14.1rem + 10vmin);
+      width: calc(14.1rem + 10vmin);
+      z-index: -1;
+      top: -20%;
+      left: 30%;
     }
     .call-to-action {
       .call-to-action-content {

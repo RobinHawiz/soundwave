@@ -67,6 +67,15 @@ button {
   z-index: 1;
 }
 
+#home .hero-section .circle {
+  position: absolute;
+}
+
+#home .hero-section .circle svg {
+  height: 100%;
+  width: 100%;
+}
+
 #home .hero-section .circle1 {
   position: absolute;
   fill: #bc3a80;
@@ -78,9 +87,15 @@ button {
   left: 0;
 }
 
-#home .hero-section .circle1 svg {
-  height: 100%;
-  width: 100%;
+#home .hero-section .circle2 {
+  position: absolute;
+  fill: #1762a7;
+  opacity: 0.1;
+  height: calc(14.1rem + 10vmin);
+  width: calc(14.1rem + 10vmin);
+  z-index: -1;
+  top: -20%;
+  left: 30%;
 }
 
 #home .hero-section .call-to-action .call-to-action-content {
