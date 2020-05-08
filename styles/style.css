@@ -74,6 +74,8 @@ button {
   height: calc(14.1rem + 20vmin);
   width: calc(14.1rem + 20vmin);
   z-index: -1;
+  bottom: 10%;
+  left: 0;
 }
 
 #home .hero-section .circle1 svg {
