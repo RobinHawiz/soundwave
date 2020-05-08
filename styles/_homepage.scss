@@ -2,6 +2,7 @@
   min-height: 90vh;
   background: $background-color;
   @include flex(row, flex-end, none);
+  overflow: hidden;
   .hero-section {
     @include spacing(90%, auto);
     @include flex(row, none, space-around);
@@ -36,6 +37,17 @@
       z-index: -1;
       top: -20%;
       left: 30%;
+    }
+
+    .circle3 {
+      position: absolute;
+      fill: #1762a7;
+      opacity: 0.1;
+      height: calc(54.1rem + 10vmin);
+      width: calc(54.1rem + 10vmin);
+      z-index: -1;
+      top: 40%;
+      left: 80%;
     }
     .call-to-action {
       .call-to-action-content {

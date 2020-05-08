@@ -46,6 +46,7 @@ button {
   -webkit-box-pack: none;
       -ms-flex-pack: none;
           justify-content: none;
+  overflow: hidden;
 }
 
 #home .hero-section {
@@ -96,6 +97,17 @@ button {
   z-index: -1;
   top: -20%;
   left: 30%;
+}
+
+#home .hero-section .circle3 {
+  position: absolute;
+  fill: #1762a7;
+  opacity: 0.1;
+  height: calc(54.1rem + 10vmin);
+  width: calc(54.1rem + 10vmin);
+  z-index: -1;
+  top: 40%;
+  left: 80%;
 }
 
 #home .hero-section .call-to-action .call-to-action-content {
