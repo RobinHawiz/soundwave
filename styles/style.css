@@ -25,7 +25,7 @@ h2 {
 }
 
 button {
-  font-size: calc(0.7vmin + 1.5rem);
+  font-size: calc(1vmin + 1rem);
   font-family: "Poppins", sans-serif;
   color: white;
 }
