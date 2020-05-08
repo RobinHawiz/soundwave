@@ -13,3 +13,8 @@ $background-color: #2f303a;
   align-items: $align;
   justify-content: $justify;
 }
+
+@mixin spacing($width, $margin) {
+  width: $width;
+  margin: $margin;
+}
