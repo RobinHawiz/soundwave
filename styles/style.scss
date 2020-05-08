@@ -16,5 +16,11 @@ $background-color: #2f303a;
   margin: 0 $margin;
 }
 
+@mixin calc($property, $expression) {
+  #{$property}: -moz-calc(#{$expression});
+  #{$property}: -webkit-calc(#{$expression});
+  #{$property}: calc(#{$expression});
+}
+
 @import "globals";
 @import "homepage";
