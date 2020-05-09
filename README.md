@@ -1,3 +1,5 @@
+**The design comes from:** https://www.youtube.com/watch?v=FK4YusHIIj0 (**DISCLAIMER!!** There is a video on how to code the website, but I didn't even take a glance at it because I wanted to do it on my own :))
+
 # 09/05-20
 Today it just really clicked for me. Everything just went smoothly and I finished the page! 🎉 HTML/CSS is just starting to make more and more sense now, ex how to position elements, structuring layouts, SASS, css animations, flexing and wrapping elements, responsiveness, typography, media queries, fluidness, navbars, footers, using images as backgrounds and much much more. 
 
