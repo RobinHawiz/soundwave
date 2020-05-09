@@ -2,7 +2,7 @@
   background: $background-color;
 
   .join-now-wrapper {
-    min-height: 90vh;
+    min-height: 80vh;
     @include flex(row, center, center);
     flex-wrap: wrap;
     .fun {

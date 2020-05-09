@@ -407,7 +407,7 @@ p {
 }
 
 #join-now .join-now-wrapper {
-  min-height: 90vh;
+  min-height: 80vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
