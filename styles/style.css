@@ -402,6 +402,14 @@ p {
   height: 100%;
 }
 
+#join-now {
+  background: #2f303a;
+}
+
+#join-now .join-now-wrapper {
+  min-height: 90vh;
+}
+
 @media screen and (max-width: 1191px) {
   #home .hero-section .music-girl-container {
     -webkit-box-ordinal-group: 3;
