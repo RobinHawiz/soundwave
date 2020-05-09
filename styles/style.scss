@@ -1,0 +1,98 @@
+$header1: calc(3vmin + 3rem);
+$header2: calc(1vmin + 2.3rem);
+$header3: calc(1vmin + 1.5rem);
+$link: calc(1vmin + 1rem);
+$p: calc(1vmin + 1rem);
+$button-text: calc(1vmin + 1rem);
+$button-color: #1762a7;
+$background-color: #2f303a;
+$box-color: #202027;
+$fun-color: #bc3a80;
+
+@mixin flex($direction, $align, $justify) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+@mixin spacing($width, $margin) {
+  width: $width;
+  margin: 0 $margin;
+}
+
+@mixin calc($property, $expression) {
+  #{$property}: -moz-calc(#{$expression});
+  #{$property}: -webkit-calc(#{$expression});
+  #{$property}: calc(#{$expression});
+}
+
+@import "globals";
+@import "homepage";
+@import "navbar";
+@import "discover";
+@import "joinNow";
+@import "footer";
+
+@media screen and (max-width: 1249px) {
+  #join-now {
+    .join-now-wrapper {
+      display: block;
+    }
+  }
+}
+
+@media screen and (max-width: 1191px) {
+  #home {
+    .hero-section {
+      .music-girl-container {
+        order: 2;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 804px) {
+  footer {
+    .footer-wrapper {
+      .info-links {
+        justify-content: center;
+      }
+      .social-links {
+        justify-content: center;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 586px) {
+  /* NAVBAR */
+
+  .navbar {
+    nav {
+      margin-right: 0;
+
+      .logo {
+        justify-content: center;
+        padding-bottom: 1.5rem;
+      }
+
+      ul {
+        justify-content: center;
+      }
+    }
+  }
+
+  /* DISCOVER SECTION */
+
+  #discover {
+    .discover-wrapper {
+      .info {
+        text-align: center;
+        .boxes-container {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

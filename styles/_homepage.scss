@@ -1,0 +1,91 @@
+#home {
+  background: $background-color;
+  @include flex(row, flex-end, none);
+  overflow: hidden;
+  .hero-section {
+    min-height: 90vh;
+    @include spacing(90%, auto);
+    @include flex(row, none, space-around);
+
+    position: relative;
+    z-index: 1;
+    flex-wrap: wrap;
+
+    .circle {
+      position: absolute;
+      svg {
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    .circle1 {
+      position: absolute;
+      fill: #bc3a80;
+      opacity: 0.1;
+      height: calc(14.1rem + 20vmin);
+      width: calc(14.1rem + 20vmin);
+      z-index: -1;
+      bottom: 0;
+      left: -5%;
+    }
+
+    .circle2 {
+      position: absolute;
+      fill: #1762a7;
+      opacity: 0.1;
+      height: calc(14.1rem + 10vmin);
+      width: calc(14.1rem + 10vmin);
+      z-index: -1;
+      top: 10%;
+      left: 30%;
+    }
+
+    .circle3 {
+      position: absolute;
+      fill: #1762a7;
+      opacity: 0.1;
+      height: calc(54.1rem + 10vmin);
+      width: calc(54.1rem + 10vmin);
+      z-index: -1;
+      top: 70%;
+      left: 80%;
+    }
+    .music-girl-container {
+      @include flex(column, center, flex-end);
+      .music-girl {
+        height: auto;
+        img {
+          object-fit: cover;
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+    .call-to-action {
+      flex: 1 1 47rem;
+      padding-top: 3rem;
+      @include flex(column, center, center);
+      .call-to-action-content {
+        height: 50%;
+        @include flex(column, none, center);
+
+        h2 {
+          padding-top: 1.5rem;
+        }
+        .button-container {
+          button {
+            @include calc(padding-top, "0.5rem + 2vmin");
+            @include calc(padding-bottom, "0.5rem + 2vmin");
+            @include calc(padding-right, "3.5rem + 3vmin");
+            @include calc(padding-left, "3.5rem + 3vmin");
+            margin-top: 7rem;
+            border-radius: 1rem;
+            border: none;
+            background: $button-color;
+          }
+        }
+      }
+    }
+  }
+}

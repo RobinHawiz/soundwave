@@ -1,0 +1,37 @@
+#discover {
+  background: $background-color;
+  .discover-wrapper {
+    min-height: 90vh;
+    @include flex(row, none, space-around);
+    flex-wrap: wrap;
+
+    .info {
+      @include flex(column, none, center);
+      padding: 4rem 0;
+      .boxes-container {
+        width: 60%;
+        padding: 5vmin 0;
+        .boxes {
+          @include flex(row, center, space-between);
+          .box {
+            @include flex(column, center, space-between);
+            height: calc(12rem + 3vmin);
+            width: calc(10rem + 2vmin);
+            padding: 2rem 3rem;
+            background: $box-color;
+          }
+        }
+      }
+    }
+    .music-image-container {
+      @include flex(row, center, none);
+      .music-image {
+        height: auto;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}

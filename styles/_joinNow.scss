@@ -1,0 +1,71 @@
+#join-now {
+  background: $background-color;
+
+  .join-now-wrapper {
+    min-height: 80vh;
+    @include flex(row, center, center);
+    flex-wrap: wrap;
+    .fun {
+      @include flex(row, none, center);
+      flex: 1 1 45rem;
+
+      h1 {
+        font-weight: bold;
+        padding: 2rem 0;
+
+        span {
+          font-size: calc(3vmin + 5rem);
+          color: $fun-color;
+        }
+      }
+    }
+    .form-wrapper {
+      @include flex(row, none, center);
+      flex: 1 1 45rem;
+      padding: 5rem;
+
+      form {
+        @include flex(column, none, space-around);
+        height: 100%;
+        width: 80rem;
+        border-radius: 2rem;
+        padding: 0 10rem;
+        padding-left: calc(3rem + 5vmin);
+        padding-right: calc(3rem + 5vmin);
+        background: $box-color;
+        .info-box {
+          margin-top: calc(0.5rem + 3.5vmin);
+          margin-bottom: calc(0.5rem + 3.5vmin);
+        }
+        label {
+          font-size: $p;
+        }
+        input {
+          outline: none;
+          border: none;
+          margin-top: calc(2rem + 2vmin);
+          width: 100%;
+          padding: 1.2rem 1rem;
+          font-size: $p;
+          border: 0.2rem solid $button-color;
+          border-radius: 1rem;
+          background: transparent;
+          color: white;
+        }
+        .button {
+          margin: 4rem 0;
+          button {
+            @include calc(padding-top, "0.5rem + 1vmin");
+            @include calc(padding-bottom, "0.5rem + 1vmin");
+            @include calc(padding-right, "3.5rem + 3vmin");
+            @include calc(padding-left, "3.5rem + 3vmin");
+            width: 100%;
+            border-radius: 1rem;
+            border: none;
+            background: $button-color;
+          }
+        }
+      }
+    }
+  }
+}
