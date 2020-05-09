@@ -3,5 +3,48 @@
 
   .join-now-wrapper {
     min-height: 90vh;
+    @include flex(row, none, space-around);
+    .fun {
+      @include flex(row, center, none);
+    }
+    .form-wrapper {
+      @include flex(row, center, none);
+
+      form {
+        @include flex(column, none, space-around);
+        height: 70rem;
+        width: 80rem;
+        border-radius: 2rem;
+        padding: 0 10rem;
+        background: $box-color;
+        label {
+          font-size: $p;
+        }
+        input {
+          outline: none;
+          border: none;
+          margin-top: 4rem;
+          width: 100%;
+          padding: 1.2rem 1rem;
+          font-size: $p;
+          border: 0.2rem solid $button-color;
+          border-radius: 1rem;
+          background: transparent;
+          color: white;
+        }
+        .button {
+          button {
+            @include calc(padding-top, "0.5rem + 2vmin");
+            @include calc(padding-bottom, "0.5rem + 2vmin");
+            @include calc(padding-right, "3.5rem + 3vmin");
+            @include calc(padding-left, "3.5rem + 3vmin");
+            width: 100%;
+            border-radius: 1rem;
+            border: none;
+            background: $button-color;
+          }
+        }
+      }
+    }
   }
 }

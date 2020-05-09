@@ -6,6 +6,7 @@ $p: calc(1vmin + 1rem);
 $button-text: calc(1vmin + 1rem);
 $button-color: #1762a7;
 $background-color: #2f303a;
+$box-color: #202027;
 
 @mixin flex($direction, $align, $justify) {
   display: flex;

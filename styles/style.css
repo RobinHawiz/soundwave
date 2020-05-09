@@ -408,6 +408,98 @@ p {
 
 #join-now .join-now-wrapper {
   min-height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: none;
+      -ms-flex-align: none;
+          align-items: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#join-now .join-now-wrapper .fun {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
+}
+
+#join-now .join-now-wrapper .form-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
+}
+
+#join-now .join-now-wrapper .form-wrapper form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: none;
+      -ms-flex-align: none;
+          align-items: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 70rem;
+  width: 80rem;
+  border-radius: 2rem;
+  padding: 0 10rem;
+  background: #202027;
+}
+
+#join-now .join-now-wrapper .form-wrapper form label {
+  font-size: calc(1vmin + 1rem);
+}
+
+#join-now .join-now-wrapper .form-wrapper form input {
+  outline: none;
+  border: none;
+  margin-top: 4rem;
+  width: 100%;
+  padding: 1.2rem 1rem;
+  font-size: calc(1vmin + 1rem);
+  border: 0.2rem solid #1762a7;
+  border-radius: 1rem;
+  background: transparent;
+  color: white;
+}
+
+#join-now .join-now-wrapper .form-wrapper form .button button {
+  padding-top: calc(0.5rem + 2vmin);
+  padding-bottom: calc(0.5rem + 2vmin);
+  padding-right: calc(3.5rem + 3vmin);
+  padding-left: calc(3.5rem + 3vmin);
+  width: 100%;
+  border-radius: 1rem;
+  border: none;
+  background: #1762a7;
 }
 
 @media screen and (max-width: 1191px) {
