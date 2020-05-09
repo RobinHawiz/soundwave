@@ -438,6 +438,15 @@ p {
           justify-content: none;
 }
 
+#join-now .join-now-wrapper .fun h1 {
+  font-weight: bold;
+}
+
+#join-now .join-now-wrapper .fun h1 span {
+  font-size: calc(3vmin + 5rem);
+  color: #bc3a80;
+}
+
 #join-now .join-now-wrapper .form-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;

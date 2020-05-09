@@ -6,6 +6,15 @@
     @include flex(row, none, space-around);
     .fun {
       @include flex(row, center, none);
+
+      h1 {
+        font-weight: bold;
+
+        span {
+          font-size: calc(3vmin + 5rem);
+          color: $fun-color;
+        }
+      }
     }
     .form-wrapper {
       @include flex(row, center, none);
