@@ -48,7 +48,6 @@ li {
 }
 
 #home {
-  min-height: 90vh;
   background: #2f303a;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -67,6 +66,7 @@ li {
 }
 
 #home .hero-section {
+  min-height: 90vh;
   width: 90%;
   margin: 0 auto;
   display: -webkit-box;
@@ -103,8 +103,8 @@ li {
   height: calc(14.1rem + 20vmin);
   width: calc(14.1rem + 20vmin);
   z-index: -1;
-  bottom: 10%;
-  left: 0;
+  bottom: 0;
+  left: -5%;
 }
 
 #home .hero-section .circle2 {
@@ -114,7 +114,7 @@ li {
   height: calc(14.1rem + 10vmin);
   width: calc(14.1rem + 10vmin);
   z-index: -1;
-  top: -20%;
+  top: 10%;
   left: 30%;
 }
 
@@ -125,15 +125,31 @@ li {
   height: calc(54.1rem + 10vmin);
   width: calc(54.1rem + 10vmin);
   z-index: -1;
-  top: 40%;
+  top: 70%;
   left: 80%;
 }
 
-#home .hero-section .music-girl {
-  min-width: 32rem;
+#home .hero-section .music-girl-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
-#home .hero-section .music-girl img {
+#home .hero-section .music-girl-container .music-girl {
+  height: auto;
+}
+
+#home .hero-section .music-girl-container .music-girl img {
   -o-object-fit: cover;
      object-fit: cover;
   height: 100%;
@@ -155,9 +171,9 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: none;
-      -ms-flex-pack: none;
-          justify-content: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #home .hero-section .call-to-action .call-to-action-content {
@@ -278,7 +294,7 @@ li {
 }
 
 @media screen and (max-width: 1191px) {
-  .music-girl {
+  #home .hero-section .music-girl-container {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;

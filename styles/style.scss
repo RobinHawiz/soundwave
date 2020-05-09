@@ -29,8 +29,12 @@ $background-color: #2f303a;
 @import "navbar";
 
 @media screen and (max-width: 1191px) {
-  .music-girl {
-    order: 2;
+  #home {
+    .hero-section {
+      .music-girl-container {
+        order: 2;
+      }
+    }
   }
 }
 
