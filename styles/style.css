@@ -293,6 +293,14 @@ li {
   padding: 0rem 2.5rem;
 }
 
+#discover {
+  background: #2f303a;
+}
+
+#discover .discover-wrapper {
+  min-height: 90vh;
+}
+
 @media screen and (max-width: 1191px) {
   #home .hero-section .music-girl-container {
     -webkit-box-ordinal-group: 3;
