@@ -2,5 +2,27 @@
   background: $background-color;
   .discover-wrapper {
     min-height: 90vh;
+    @include flex(row, none, space-around);
+
+    .info {
+      @include flex(column, none, center);
+      .boxes-container {
+        width: 60%;
+        padding: 5vmin 0;
+        .boxes {
+          @include flex(row, center, space-between);
+          .box {
+            @include flex(column, center, space-between);
+            height: 15rem;
+            width: 12rem;
+            padding: 2rem 3rem;
+            background: #202027;
+          }
+        }
+      }
+    }
+    .music-image-container {
+      @include flex(row, center, none);
+    }
   }
 }

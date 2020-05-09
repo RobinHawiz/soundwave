@@ -47,6 +47,10 @@ li {
   list-style: none;
 }
 
+p {
+  font-size: calc(1vmin + 1rem);
+}
+
 #home {
   background: #2f303a;
   display: -webkit-box;
@@ -299,6 +303,91 @@ li {
 
 #discover .discover-wrapper {
   min-height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: none;
+      -ms-flex-align: none;
+          align-items: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#discover .discover-wrapper .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: none;
+      -ms-flex-align: none;
+          align-items: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#discover .discover-wrapper .info .boxes-container {
+  width: 60%;
+  padding: 5vmin 0;
+}
+
+#discover .discover-wrapper .info .boxes-container .boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#discover .discover-wrapper .info .boxes-container .boxes .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 15rem;
+  width: 12rem;
+  padding: 2rem 3rem;
+  background: #202027;
+}
+
+#discover .discover-wrapper .music-image-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
 }
 
 @media screen and (max-width: 1191px) {
