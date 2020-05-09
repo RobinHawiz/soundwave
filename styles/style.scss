@@ -41,6 +41,8 @@ $background-color: #2f303a;
 }
 
 @media screen and (max-width: 586px) {
+  /* NAVBAR */
+
   .navbar {
     nav {
       margin-right: 0;
@@ -52,6 +54,19 @@ $background-color: #2f303a;
 
       ul {
         justify-content: center;
+      }
+    }
+  }
+
+  /* DISCOVER SECTION */
+
+  #discover {
+    .discover-wrapper {
+      .info {
+        text-align: center;
+        .boxes-container {
+          width: 100%;
+        }
       }
     }
   }
