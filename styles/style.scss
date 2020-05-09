@@ -33,6 +33,14 @@ $fun-color: #bc3a80;
 @import "discover";
 @import "joinNow";
 
+@media screen and (max-width: 1249px) {
+  #join-now {
+    .join-now-wrapper {
+      display: block;
+    }
+  }
+}
+
 @media screen and (max-width: 1191px) {
   #home {
     .hero-section {

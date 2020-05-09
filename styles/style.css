@@ -415,11 +415,14 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-align: none;
-      -ms-flex-align: none;
-          align-items: none;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 #join-now .join-now-wrapper .fun {
@@ -430,16 +433,20 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: none;
-      -ms-flex-pack: none;
-          justify-content: none;
+  -webkit-box-align: none;
+      -ms-flex-align: none;
+          align-items: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 45rem;
+          flex: 1 1 45rem;
 }
 
 #join-now .join-now-wrapper .fun h1 {
   font-weight: bold;
+  padding: 2rem 0;
 }
 
 #join-now .join-now-wrapper .fun h1 span {
@@ -455,12 +462,16 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: none;
-      -ms-flex-pack: none;
-          justify-content: none;
+  -webkit-box-align: none;
+      -ms-flex-align: none;
+          align-items: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 45rem;
+          flex: 1 1 45rem;
+  padding: 5rem;
 }
 
 #join-now .join-now-wrapper .form-wrapper form {
@@ -476,11 +487,18 @@ p {
           align-items: none;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  height: 70rem;
+  height: 100%;
   width: 80rem;
   border-radius: 2rem;
   padding: 0 10rem;
+  padding-left: calc(3rem + 5vmin);
+  padding-right: calc(3rem + 5vmin);
   background: #202027;
+}
+
+#join-now .join-now-wrapper .form-wrapper form .info-box {
+  margin-top: calc(0.5rem + 3.5vmin);
+  margin-bottom: calc(0.5rem + 3.5vmin);
 }
 
 #join-now .join-now-wrapper .form-wrapper form label {
@@ -490,7 +508,7 @@ p {
 #join-now .join-now-wrapper .form-wrapper form input {
   outline: none;
   border: none;
-  margin-top: 4rem;
+  margin-top: calc(2rem + 2vmin);
   width: 100%;
   padding: 1.2rem 1rem;
   font-size: calc(1vmin + 1rem);
@@ -500,15 +518,25 @@ p {
   color: white;
 }
 
+#join-now .join-now-wrapper .form-wrapper form .button {
+  margin: 4rem 0;
+}
+
 #join-now .join-now-wrapper .form-wrapper form .button button {
-  padding-top: calc(0.5rem + 2vmin);
-  padding-bottom: calc(0.5rem + 2vmin);
+  padding-top: calc(0.5rem + 1vmin);
+  padding-bottom: calc(0.5rem + 1vmin);
   padding-right: calc(3.5rem + 3vmin);
   padding-left: calc(3.5rem + 3vmin);
   width: 100%;
   border-radius: 1rem;
   border: none;
   background: #1762a7;
+}
+
+@media screen and (max-width: 1249px) {
+  #join-now .join-now-wrapper {
+    display: block;
+  }
 }
 
 @media screen and (max-width: 1191px) {
