@@ -1,0 +1,37 @@
+footer {
+  background: $background-color;
+  .footer-wrapper {
+    min-height: 10vh;
+    @include spacing(90%, auto);
+    @include flex(row, center, space-between);
+    flex-wrap: wrap;
+
+    ul {
+      li {
+        padding: 1rem 0rem;
+        padding-left: calc(2rem + 2vmin);
+        padding-right: calc(2rem + 2vmin);
+        a {
+          font-weight: bold;
+        }
+      }
+    }
+
+    .info-links {
+      @include flex(row, center, none);
+      flex: 1 1 35rem;
+    }
+
+    .social-links {
+      @include flex(row, center, flex-end);
+      flex: 1 1 35rem;
+      li {
+        @include flex(row, center, none);
+
+        a {
+          padding-left: 1rem;
+        }
+      }
+    }
+  }
+}

@@ -32,6 +32,7 @@ $fun-color: #bc3a80;
 @import "navbar";
 @import "discover";
 @import "joinNow";
+@import "footer";
 
 @media screen and (max-width: 1249px) {
   #join-now {
@@ -46,6 +47,19 @@ $fun-color: #bc3a80;
     .hero-section {
       .music-girl-container {
         order: 2;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 804px) {
+  footer {
+    .footer-wrapper {
+      .info-links {
+        justify-content: center;
+      }
+      .social-links {
+        justify-content: center;
       }
     }
   }
