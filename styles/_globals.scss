@@ -23,9 +23,25 @@ h2 {
   font-weight: lighter;
 }
 
+h3 {
+  font-size: $header3;
+  font-weight: lighter;
+}
+
 button {
   font-size: $button-text;
   font-family: "Poppins", sans-serif;
   color: white;
   cursor: pointer;
+}
+
+a {
+  font-size: $link;
+  font-weight: lighter;
+  text-decoration: none;
+  color: white;
+}
+
+li {
+  list-style: none;
 }

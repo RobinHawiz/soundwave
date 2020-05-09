@@ -24,11 +24,27 @@ h2 {
   font-weight: lighter;
 }
 
+h3 {
+  font-size: calc(1vmin + 1.5rem);
+  font-weight: lighter;
+}
+
 button {
   font-size: calc(1vmin + 1rem);
   font-family: "Poppins", sans-serif;
   color: white;
   cursor: pointer;
+}
+
+a {
+  font-size: calc(1vmin + 1rem);
+  font-weight: lighter;
+  text-decoration: none;
+  color: white;
+}
+
+li {
+  list-style: none;
 }
 
 #home {
@@ -176,11 +192,113 @@ button {
   background: #1762a7;
 }
 
+.navbar {
+  min-height: 10vh;
+  background: #2f303a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: none;
+      -ms-flex-align: none;
+          align-items: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.navbar nav {
+  width: 70%;
+  margin-right: 20vmin;
+  padding: 2rem 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar nav .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 20rem;
+          flex: 1 1 20rem;
+}
+
+.navbar nav .logo h3 {
+  padding-left: 1.5rem;
+}
+
+.navbar nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 20rem;
+          flex: 1 1 20rem;
+}
+
+.navbar nav ul li {
+  padding: 0rem 2.5rem;
+}
+
 @media screen and (max-width: 1191px) {
   .music-girl {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
+  }
+}
+
+@media screen and (max-width: 586px) {
+  .navbar nav {
+    margin-right: 0;
+  }
+  .navbar nav .logo {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-bottom: 1.5rem;
+  }
+  .navbar nav ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 /*# sourceMappingURL=style.css.map */

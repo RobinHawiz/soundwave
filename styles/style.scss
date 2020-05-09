@@ -1,5 +1,7 @@
 $header1: calc(3vmin + 3rem);
 $header2: calc(1vmin + 2.3rem);
+$header3: calc(1vmin + 1.5rem);
+$link: calc(1vmin + 1rem);
 $button-text: calc(1vmin + 1rem);
 $button-color: #1762a7;
 $background-color: #2f303a;
@@ -29,5 +31,22 @@ $background-color: #2f303a;
 @media screen and (max-width: 1191px) {
   .music-girl {
     order: 2;
+  }
+}
+
+@media screen and (max-width: 586px) {
+  .navbar {
+    nav {
+      margin-right: 0;
+
+      .logo {
+        justify-content: center;
+        padding-bottom: 1.5rem;
+      }
+
+      ul {
+        justify-content: center;
+      }
+    }
   }
 }

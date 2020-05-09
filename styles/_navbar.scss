@@ -1,0 +1,30 @@
+.navbar {
+  min-height: 10vh;
+  background: $background-color;
+  @include flex(row, none, center);
+
+  nav {
+    width: 70%;
+    margin-right: 20vmin;
+    padding: 2rem 0;
+    flex-wrap: wrap;
+    @include flex(row, center, space-between);
+
+    .logo {
+      @include flex(row, center, none);
+      flex: 1 1 20rem;
+
+      h3 {
+        padding-left: 1.5rem;
+      }
+    }
+
+    ul {
+      @include flex(row, center, flex-end);
+      flex: 1 1 20rem;
+      li {
+        padding: 0rem 2.5rem;
+      }
+    }
+  }
+}
